@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Hero3DScene from './Hero3DScene';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -69,20 +70,7 @@ const HeroSection = () => {
           </div>
 
           <div className="relative animate-slide-in-right">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop&crop=top"
-                alt="Équipe créative travaillant sur des projets" 
-                className="rounded-2xl shadow-2xl w-full border-2 border-vibrant-pink/30"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-vibrant-purple/20">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-vibrant-yellow rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-vibrant-purple">En ligne maintenant</span>
-                </div>
-                <p className="text-xs text-gray-600 mt-1">Prêts à transformer votre vision</p>
-              </div>
-            </div>
+            <Hero3DScene />
           </div>
         </div>
       </div>
