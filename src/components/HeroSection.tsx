@@ -2,7 +2,6 @@
 import React from 'react';
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Hero3DScene from './Hero3DScene';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -70,7 +69,21 @@ const HeroSection = () => {
           </div>
 
           <div className="relative animate-slide-in-right">
-            <Hero3DScene />
+            <div className="relative w-full h-[400px] rounded-2xl shadow-2xl overflow-hidden border-2 border-vibrant-purple/30 bg-gradient-to-br from-vibrant-purple/20 to-vibrant-lavender/20">
+              <div className="absolute inset-0 bg-gradient-to-r from-vibrant-lime/10 to-vibrant-purple/10 animate-pulse"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <div className="w-32 h-32 bg-gradient-to-r from-vibrant-lime to-vibrant-purple rounded-full mx-auto mb-4 animate-bounce opacity-80"></div>
+                <h3 className="text-2xl font-bold text-white mb-2">Créativité</h3>
+                <p className="text-vibrant-lime">en mouvement</p>
+              </div>
+              <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-vibrant-purple/20 z-10">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-vibrant-lime rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-vibrant-purple">En ligne maintenant</span>
+                </div>
+                <p className="text-xs text-gray-600 mt-1">Prêts à transformer votre vision</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
