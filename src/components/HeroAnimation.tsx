@@ -21,7 +21,7 @@ const HeroAnimation = () => {
       <mesh ref={meshRef}>
         <sphereGeometry args={[1, 32, 32]} />
         <meshStandardMaterial 
-          color="#b931fc" 
+          color="#A51CF1" 
           metalness={0.7}
           roughness={0.2}
         />

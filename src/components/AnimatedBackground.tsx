@@ -20,8 +20,8 @@ const AnimatedBackground = () => {
       className="fixed inset-0 -z-10 transition-all duration-1000 ease-out"
       style={{
         background: `linear-gradient(135deg, 
-          hsl(${280 - scrollY * 0.1}, 85%, ${60 + gradientIntensity * 20}%) 0%, 
-          hsl(${250 + scrollY * 0.05}, 80%, ${65 + gradientIntensity * 15}%) 100%)`,
+          #A51CF1 0%, 
+          #D4C2FC 100%)`,
         backgroundSize: '200% 200%',
       }}
     >
@@ -29,11 +29,11 @@ const AnimatedBackground = () => {
         className="absolute inset-0 animate-gradient-shift opacity-30"
         style={{
           background: `linear-gradient(45deg, 
-            #b931fc 0%, 
-            #4d7fff 25%, 
-            #ff9fb2 50%, 
-            #ffd23f 75%, 
-            #b931fc 100%)`,
+            #A51CF1 0%, 
+            #DEFD47 25%, 
+            #D4C2FC 50%, 
+            #A51CF1 75%, 
+            #DEFD47 100%)`,
           backgroundSize: '400% 400%',
         }}
       />
